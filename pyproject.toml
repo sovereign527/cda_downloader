@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "cda_downloader"
+version = "0.1.0"
+description = "CDA.PL Video downloader"
+authors = ["sovereign527 <sovereign527@protonmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/sovereign527/cda_downloader"
+repository = "https://github.com/sovereign527/cda_downloader"
+documentation = "https://github.com/sovereign527/cda_downloader"
+keywords = ["CDA", "api", "downloader", "video", "python"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0.0"
+beautifulsoup4 = "^4"
+requests = "^2.27"
+click = "^8.1.2"
+html5lib = { version = "^1.1", optional = true }
+rich = { version = "^12.1.0", optional = true }
+random-user-agent = { version = "^1.0.1", optional = true }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
